@@ -62,8 +62,6 @@
                     <connections>
                         <outlet property="tempField" destination="2ne-Uw-UTT" id="8ug-fR-7aE"/>
                         <outlet property="tempResult" destination="inQ-tx-e1P" id="m5c-mv-V6A"/>
-                        <outlet property="toC" destination="cZA-Gl-via" id="BM0-9x-bIk"/>
-                        <outlet property="toF" destination="74m-nq-Qxs" id="bcn-eg-GwZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
