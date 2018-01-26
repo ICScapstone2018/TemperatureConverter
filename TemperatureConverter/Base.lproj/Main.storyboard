@@ -29,6 +29,9 @@
                                 <rect key="frame" x="95" y="487" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="°C&gt;°F"/>
+                                <connections>
+                                    <action selector="toF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZoJ-3f-IYE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temperature:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTd-uA-aYI">
                                 <rect key="frame" x="136" y="369" width="102" height="21"/>
@@ -48,11 +51,20 @@
                                 <rect key="frame" x="247" y="487" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="°F&gt;°C"/>
+                                <connections>
+                                    <action selector="toC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1QN-Sj-GPy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tempField" destination="2ne-Uw-UTT" id="8ug-fR-7aE"/>
+                        <outlet property="tempResult" destination="inQ-tx-e1P" id="m5c-mv-V6A"/>
+                        <outlet property="toC" destination="cZA-Gl-via" id="BM0-9x-bIk"/>
+                        <outlet property="toF" destination="74m-nq-Qxs" id="bcn-eg-GwZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
