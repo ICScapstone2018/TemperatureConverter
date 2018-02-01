@@ -49,7 +49,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         else {
             print("N/A: Not a valid number")
             self.tempResult.text = String("N/A")
-                 }
+        }
     }
 }
 
