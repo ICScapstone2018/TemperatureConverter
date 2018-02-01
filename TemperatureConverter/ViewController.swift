@@ -12,8 +12,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // MARK: Properties
     @IBOutlet weak var tempField: UITextField!
     @IBOutlet weak var tempResult: UILabel!
+    
     // MARK: Delegate Methods
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,6 +30,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     // MARK: Actions
+    // Converts Celsius to Farenheit, prints N/A if not a number
     @IBAction func toF(_ sender: Any) {
         if let temp = Double(self.tempField.text!) {
     self.tempResult.text = String(temp * 9.0/5.0 + 32.0)
@@ -38,6 +39,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             print("N/A: Not a valid number")
         }
     }
+    // Converts Farenheit to Celsius, prints N/A if not a number
     @IBAction func toC(_ sender: Any) {
         if let temp = Double(self.tempField.text!) {
             self.tempResult.text = String((temp - 32.0) * 5.0/9.0)
