@@ -37,6 +37,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         else {
             print("N/A: Not a valid number")
+            self.tempResult.text = String("N/A")
+            
         }
     }
     // Converts Farenheit to Celsius, prints N/A if not a number
@@ -46,7 +48,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         else {
             print("N/A: Not a valid number")
-        }
+            self.tempResult.text = String("N/A")
+                 }
     }
 }
 
