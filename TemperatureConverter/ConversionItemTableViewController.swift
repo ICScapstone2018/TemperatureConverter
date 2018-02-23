@@ -75,6 +75,8 @@ class ConversionItemTableViewController: UITableViewController {
                                   closureConvertRight: {(value: Double) -> Double?  in return (value < 0) ? nil : value * 2.47105})
         
         let weight = ConversionItem(converLabel: "Weight Converter",
+                                    leftButton: "lbs > kgs",
+                                    rightButton: "kgs > lbs",
                                     )
         
        //etc
