@@ -10,10 +10,21 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     // MARK: Properties
-   // @IBOutlet weak var tempField: UITextField!
-  //  @IBOutlet weak var tempResult: UILabel!
+    @IBOutlet weak var tempField: UITextField!
+    @IBOutlet weak var tempResult: UILabel!
     
-    //label outlets
+    
+    @IBOutlet weak var LeftButton: UIButton!
+    @IBOutlet weak var RightButton: UIButton!
+    
+    
+    @IBAction func LeftButtonClick(_ sender: Any) {
+    }
+    
+    @IBAction func RightButtonClick(_ sender: Any) {
+    }
+    
+    
     //buttonm outs and actions
     //input fields: value field and a result field
     

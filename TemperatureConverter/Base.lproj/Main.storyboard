@@ -37,7 +37,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="Label" destination="2Pv-rl-0Rs" id="214-xO-a0A"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="KsZ-dh-sYB"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowItem" id="KsZ-dh-sYB"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -72,6 +72,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="°C&gt;°F"/>
                                 <connections>
+                                    <action selector="LeftButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1hw-Hx-ZqT"/>
                                     <action selector="toF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZoJ-3f-IYE"/>
                                 </connections>
                             </button>
@@ -94,6 +95,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="°F&gt;°C"/>
                                 <connections>
+                                    <action selector="RightButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7jQ-Oo-Bsb"/>
                                     <action selector="toC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1QN-Sj-GPy"/>
                                 </connections>
                             </button>
@@ -102,6 +104,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="LeftButton" destination="74m-nq-Qxs" id="TpG-iH-gVC"/>
+                        <outlet property="RightButton" destination="cZA-Gl-via" id="gyb-Ju-xSP"/>
                         <outlet property="tempField" destination="2ne-Uw-UTT" id="8ug-fR-7aE"/>
                         <outlet property="tempResult" destination="inQ-tx-e1P" id="m5c-mv-V6A"/>
                     </connections>

@@ -15,7 +15,7 @@ class ConversionItem: NSObject {
     var closureConvertLeft: (Double) -> Double?
     var closureConvertRight: (Double) -> Double?
     
-    init(convertLabel: UILabel, leftButton: UIButton, rightButton: UIButton, closureConvertLeft: @escaping (Double) -> Double?, closureConvertRight: @escaping (Double) -> Double?) {
+    init(convertLabel: String, leftButton: String, rightButton: String, closureConvertLeft: @escaping (Double) -> Double?, closureConvertRight: @escaping (Double) -> Double?) {
         self.convertLabel = convertLabel
         self.leftButton = leftButton
         self.rightButton = rightButton

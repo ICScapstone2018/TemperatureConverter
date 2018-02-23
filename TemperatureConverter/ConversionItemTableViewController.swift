@@ -74,13 +74,26 @@ class ConversionItemTableViewController: UITableViewController {
                                   closureConvertLeft: {(value: Double) -> Double? in return (value < 0) ? nil : value * 0.404686},
                                   closureConvertRight: {(value: Double) -> Double?  in return (value < 0) ? nil : value * 2.47105})
         
-        let weight = ConversionItem(converLabel: "Weight Converter",
+        let length = ConversionItem(convertLabel: "Length Converter",
+                                  leftButton: "ft > m",
+                                  rightButton: "m > ft",
+                                  closureConvertLeft: {(value: Double) -> Double? in return (value < 0) ? nil : value * 0.3048},
+                                  closureConvertRight: {(value: Double) -> Double?  in return (value < 0) ? nil : value * 3.28084})
+        
+        let temperature = ConversionItem(convertLabel: "Temperature Converter",
+                                    leftButton: "°C>°F",
+                                    rightButton: "°F>°C",
+                                    closureConvertLeft: {(value: Double) -> Double? in return (value < 0) ? nil : (value * 9.0/5.0 + 32.0)},
+                                    closureConvertRight: {(value: Double) -> Double? in return (value < 0) ? nil : ((value - 32.0) * 5.0/9.0)})
+        
+        let weight = ConversionItem(convertLabel: "Weight Converter",
                                     leftButton: "lbs > kgs",
                                     rightButton: "kgs > lbs",
-                                    )
+                                    closureConvertLeft: {(value: Double) -> Double? in return (value < 0) ? nil : value * 0.453592},
+                                    closureConvertRight: {(value: Double) -> Double?  in return (value < 0) ? nil : value * 2.20462})
         
        //etc
-        items += [area, weight]//etc
+        items += [area, length, temperature, weight]//etc
         
     }
     
