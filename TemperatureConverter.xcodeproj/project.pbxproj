@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8635399820408EB000C79AAE /* ConversionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8635399720408EB000C79AAE /* ConversionItem.swift */; };
+		8635399A2040960E00C79AAE /* ConversionItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863539992040960E00C79AAE /* ConversionItemTableViewCell.swift */; };
 		865B566F203F61110092253D /* ConversionItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B566E203F61110092253D /* ConversionItemTableViewCell.swift */; };
 		865B5671203F654C0092253D /* ConversionItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B5670203F654C0092253D /* ConversionItemTableViewController.swift */; };
 		866899F0201BA3EC0002A36E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866899EF201BA3EC0002A36E /* AppDelegate.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8635399720408EB000C79AAE /* ConversionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionItem.swift; sourceTree = "<group>"; };
+		863539992040960E00C79AAE /* ConversionItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionItemTableViewCell.swift; sourceTree = "<group>"; };
 		865B566E203F61110092253D /* ConversionItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionItemTableViewCell.swift; sourceTree = "<group>"; };
 		865B5670203F654C0092253D /* ConversionItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionItemTableViewController.swift; sourceTree = "<group>"; };
 		866899EC201BA3EC0002A36E /* TemperatureConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +109,8 @@
 				866899EF201BA3EC0002A36E /* AppDelegate.swift */,
 				866899F1201BA3EC0002A36E /* ViewController.swift */,
 				866899F3201BA3EC0002A36E /* Main.storyboard */,
+				863539992040960E00C79AAE /* ConversionItemTableViewCell.swift */,
+				8635399720408EB000C79AAE /* ConversionItem.swift */,
 				865B5670203F654C0092253D /* ConversionItemTableViewController.swift */,
 				866899F6201BA3EC0002A36E /* Assets.xcassets */,
 				866899F8201BA3EC0002A36E /* LaunchScreen.storyboard */,
@@ -265,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8635399820408EB000C79AAE /* ConversionItem.swift in Sources */,
 				866899F2201BA3EC0002A36E /* ViewController.swift in Sources */,
+				8635399A2040960E00C79AAE /* ConversionItemTableViewCell.swift in Sources */,
 				866899F0201BA3EC0002A36E /* AppDelegate.swift in Sources */,
 				865B5671203F654C0092253D /* ConversionItemTableViewController.swift in Sources */,
 				865B566F203F61110092253D /* ConversionItemTableViewCell.swift in Sources */,
