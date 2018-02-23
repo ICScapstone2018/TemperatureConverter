@@ -37,7 +37,7 @@ class ConversionItemTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return items.count
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -62,10 +62,27 @@ class ConversionItemTableViewController: UITableViewController {
         }
         
         let item = items[indexPath.row]
-        cell.UILabel.Label = item.Label
+        cell.Label.text = item.convertLabel
         
         return cell
-    }    /*
+    }
+    
+    func loadConversionItem() {
+        let area = ConversionItem(convertLabel: "Area Converter",
+                                  leftButton: "ac > ha",
+                                  rightButton: "ha > ac",
+                                  closureConvertLeft: {(value: Double) -> Double? in return (value < 0) ? nil : value * 0.404686},
+                                  closureConvertRight: {(value: Double) -> Double?  in return (value < 0) ? nil : value * 2.47105})
+        
+        let weight = ConversionItem(converLabel: "Weight Converter",
+                                    )
+        
+       //etc
+        items += [area, weight]//etc
+        
+    }
+    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
