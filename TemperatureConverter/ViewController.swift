@@ -13,6 +13,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var tempField: UITextField!
     @IBOutlet weak var tempResult: UILabel!
     
+    var item: ConversionItem?
+    
     // MARK: Delegate Methods
     override func viewDidLoad() {
         super.viewDidLoad()

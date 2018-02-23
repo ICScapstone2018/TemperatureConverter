@@ -10,6 +10,7 @@ import UIKit
 
 class ConversionItemTableViewController: UITableViewController {
 
+    var items = [ConversionItem]()
     let cellIdentifier = "ConversionItemTableViewCell"
     
     override func viewDidLoad() {
@@ -38,8 +39,33 @@ class ConversionItemTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 1
     }
-
-    /*
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if segue.identifier == "ShowItem" {
+            guard let detailViewController = segue.destination as? ViewController else {
+                fatalError("Unexpected destination \(segue.destination)")
+            }
+            guard let selectedTableViewCell = sender as? ConversionItemTableViewCell else {
+                fatalError("Unexpected destination \(String(describing: sender))")
+            }
+            guard let indexPath = tableView.indexPath(for: selectedTableViewCell) else {
+                fatalError("Unexpected index path for \(selectedTableViewCell)")
+            }
+            detailViewController.item = items[indexPath.row]
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ConversionItemTableViewCell else {
+            fatalError("Selected cell is not of type \(cellIdentifier)")
+        }
+        
+        let item = items[indexPath.row]
+        cell.UILabel.Label = item.Label
+        
+        return cell
+    }    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 

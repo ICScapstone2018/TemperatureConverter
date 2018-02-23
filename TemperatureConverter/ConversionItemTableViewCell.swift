@@ -11,6 +11,7 @@ import UIKit
 class ConversionItemTableViewCell: UITableViewCell {
 
     
+    @IBOutlet weak var Label: UILabel!
     
     
     override func awakeFromNib() {
@@ -23,5 +24,6 @@ class ConversionItemTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
 
 }
